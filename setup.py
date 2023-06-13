@@ -60,11 +60,16 @@ class ESP_FIRMWARE():
             self.files_size=self.getdirsize("./Freenove/Linux")
             self.str_files_size = str(int(self.files_size/1024/1024)) + "MB"
             shutil.copytree("./Freenove/Linux", target_dir, copy_function=self.copy2_verbose)
+            buf = "sudo chmod -R 755 " + target_dir
+            print(buf)
+            os.system(buf)
         else:
             self.files_size=self.getdirsize("./Freenove/Mac")
             self.str_files_size = str(int(self.files_size/1024/1024)) + "MB"
             shutil.copytree("./Freenove/Mac", target_dir, copy_function=self.copy2_verbose)
-
+            buf = "sudo chmod -R 755 " + target_dir
+            print(buf)
+            os.system(buf)
         print("The files have been extracted, please restart the Arduino IDE.\r\n")
 
 
