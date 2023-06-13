@@ -30,11 +30,11 @@ URL: [https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32](https://gith
 
 ## Usage
 ### Step 1. Install Python3
-	`https://www.python.org/downloads/`
+	https://www.python.org/downloads/
 
 ### Step 2. Execute the command.
-	`python setup.py`
-	`python3 setup.py`
+	python setup.py
+	python3 setup.py
 
 
 
